@@ -18,29 +18,29 @@ public class BMIcalculator implements Calculator{
     @Override
     public String interpret() {
 
-        String interpretacja = "Nieprawidłowy wynik.";
-        double bmi = calculate() * 100;
+        String interpretacja = "Nieprawidlowy wynik.";
+        double bmi = calculate();
 
-       if(bmi < 1600){
-           interpretacja = "Wygłodzenie!";}
+       if(bmi < 16.00){
+           interpretacja = "Wyglodzenie!"; }
 
-           else if (bmi >16.00 || bmi <= 16.99){
+           else if (bmi >16.00 && bmi <= 16.99){
                interpretacja = "Wychudzenie!";
            }
 
-           else if (bmi > 16.99 || bmi <=18.49 ){
+           else if (bmi > 16.99 && bmi <=18.49 ){
                interpretacja = "Niedowaga";
        }
-           else if (bmi > 18.50 || bmi <= 24.99){
-               interpretacja = "Wartość prawidlowa";
+           else if (bmi > 18.50 && bmi <= 24.99){
+               interpretacja = "Wartosc prawidlowa";
        }
-           else if (bmi > 25.00 || bmi <= 29.99){
+           else if (bmi > 25.00 && bmi <= 29.99){
                interpretacja = "Nadwaga";
        }
-           else if (bmi > 30.00 || bmi <= 34.99){
-               interpretacja = "I stopień otyłości";
+           else if (bmi > 30.00 && bmi <= 34.99){
+               interpretacja = "I stopien otylosci";
        }
-           else if (bmi > 35.00 || bmi <= 39.99){
+           else if (bmi > 35.00 && bmi <= 39.99){
                interpretacja = "II stopień otyłości (otyłość kliniczna";
        }
            else if (bmi >= 40.00){
