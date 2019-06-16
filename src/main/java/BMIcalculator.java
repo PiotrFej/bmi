@@ -19,31 +19,31 @@ public class BMIcalculator implements Calculator{
     public String interpret() {
 
         String interpretacja = "Nieprawidłowy wynik.";
-        int bmi = (int)(calculate() * 100);
+        double bmi = calculate() * 100;
 
        if(bmi < 1600){
            interpretacja = "Wygłodzenie!";}
 
-           else if (bmi >1600 || bmi <= 1699){
+           else if (bmi >16.00 || bmi <= 16.99){
                interpretacja = "Wychudzenie!";
            }
 
-           else if (bmi > 1699 || bmi <=1849 ){
+           else if (bmi > 16.99 || bmi <=18.49 ){
                interpretacja = "Niedowaga";
        }
-           else if (bmi > 1850 || bmi <= 2499){
+           else if (bmi > 18.50 || bmi <= 24.99){
                interpretacja = "Wartość prawidlowa";
        }
-           else if (bmi > 2500 || bmi <= 2999){
+           else if (bmi > 25.00 || bmi <= 29.99){
                interpretacja = "Nadwaga";
        }
-           else if (bmi > 3000 || bmi <= 3499){
+           else if (bmi > 30.00 || bmi <= 34.99){
                interpretacja = "I stopień otyłości";
        }
-           else if (bmi > 3500 || bmi <= 3999){
+           else if (bmi > 35.00 || bmi <= 39.99){
                interpretacja = "II stopień otyłości (otyłość kliniczna";
        }
-           else if (bmi >= 4000){
+           else if (bmi >= 40.00){
                interpretacja = "III stopień otyłości (otyłośc skrajna)";
        }
 

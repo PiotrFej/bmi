@@ -1,8 +1,6 @@
 import org.junit.Before;
 import org.junit.Test;
 
-import static org.junit.Assert.assertTrue;
-import static org.junit.Assert.assertFalse;
 import static org.junit.Assert.assertEquals;
 
 public class BMIcalculatorTest {
@@ -35,6 +33,7 @@ public class BMIcalculatorTest {
 
     @Test
     public void interpret_for_bmi_20(){
+
 
     }
 }
