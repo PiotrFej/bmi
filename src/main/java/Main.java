@@ -16,6 +16,7 @@ public class Main {
 
     BMIcalculator bmIcalculator = new BMIcalculator(weight, height);
         System.out.println("Twoje BMI wynosi: " + bmIcalculator.calculate());
+        
         System.out.println(bmIcalculator.interpret());
 
 
