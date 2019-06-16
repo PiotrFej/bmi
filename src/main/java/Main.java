@@ -1,16 +1,17 @@
+import java.util.Locale;
 import java.util.Scanner;
 
 public class Main {
 
     public static void main(String[] args) {
 
-    Scanner scanner = new Scanner(System.in);
-       System.out.println("Podaj swoja wage w kg: ");
-    int weight = scanner.nextInt();
+        Scanner scanner = new Scanner(System.in).useLocale(Locale.US);
 
-        Scanner scanner2 = new Scanner(System.in);
+       System.out.println("Podaj swoja wage w kg: ");
+       double weight = scanner.nextDouble();
+
         System.out.println("Podaj swoj wzrost w metrach: ");
-        int height = scanner2.nextInt();
+        double height = scanner.nextDouble();
         scanner.close();
 
     BMIcalculator bmIcalculator = new BMIcalculator(weight, height);
